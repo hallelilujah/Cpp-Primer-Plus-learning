@@ -1,3 +1,4 @@
+/*注意组合公式的应用Cmn*/
 #include <iostream>
 long double prob(unsigned num, unsigned cho);
 int main()
