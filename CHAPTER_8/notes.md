@@ -28,7 +28,7 @@ int &rodents = rats;
 c语言使用按指针传递的方式避开按值传递的限制。
 ### 8.2.4将引用用于结构
 ```
-struct a{int a};
+struct a{int num};
 void func1(const a & ft);
 a & func2(a & ft);
 ```
