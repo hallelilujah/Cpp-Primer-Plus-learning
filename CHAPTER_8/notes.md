@@ -29,8 +29,16 @@ c语言使用按指针传递的方式避开按值传递的限制。
 ### 8.2.4将引用用于结构
 ```
 struct a{int num};
-void func1(const a & ft);
-a & func2(a & ft);
+void func1(const a & ft);//引用结构作为函数参数，并不改变结构本身。
+a & func2(a & ft);//引用结构作为函数参数，并返回引用。
 ```
-
+返回引用的函数实际上是被引用的变量的别名。返回引用一定要注意，避免返回函数终止时不再存在的内存单元引用：
+```
+const free_throws & clone(free_throws & ft)
+{
+   free_throws newguy;
+   newguy = ft;
+   return newguy;
+}
+```
 
