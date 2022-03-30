@@ -24,3 +24,4 @@ void change(string & a)
 		a[i]=toupper(a[i]);
 	}
  } 
+//注意toupper是逐字符进行操作的，所以要对string拆分
