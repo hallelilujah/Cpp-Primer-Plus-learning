@@ -1,3 +1,4 @@
+//注意如何进行模板具体化，模板原型加具体化原型和具体化函数定义，以及具体化原型的形式
 #include <iostream>
 #include <cstring>
 using namespace std;
