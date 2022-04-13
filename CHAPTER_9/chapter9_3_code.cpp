@@ -12,7 +12,7 @@ char buffer[BUF];
 int main()
 {
 	using namespace std;
-	chaff *pd1, *pd2;
+	chaff *pd1, *pd2;//注意这里的指针是chaff
 	pd1=new chaff[N];
 	pd2=new (buffer) chaff[N];
 	
